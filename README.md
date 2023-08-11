@@ -81,8 +81,11 @@ The logic of video stabilization can be summarized as follows:
 
 The main idea behind video stabilization is to analyze the motion between consecutive frames and apply appropriate transformations to compensate for this motion. The stabilization process involves estimating the transformation between frames, smoothing the estimated trajectory, and applying the stabilized transformations to the frames. This helps in reducing unwanted motion and jitter in the video, resulting in a smoother and more stable output.
 
-![ORB + Moving Average](C:/Users/PC_4232/Desktop/can/video-compensation/examples/output_affine/gifs/ORB_drone2.gif)
-![ORB + Kalman](C:/Users/PC_4232/Desktop/can/video-compensation/examples/output_affine/gifs/ORB_kalman_drone2.gif)
+### ORB + Moving Average
+![ORB + Moving Average](examples/output_affine/gifs/ORB_drone2.gif)
+
+### ORB + Kalman
+![ORB + Kalman](examples/output_affine/gifs/ORB_kalman_drone2.gif)
 
 ## Background of Method 2
 
@@ -107,7 +110,8 @@ The code performs video stabilization using the following logic steps:
 12. Crop and concatenate the stabilized frames with the original frames.
 13. Write the stabilized video to the output file.
 
-![ORB + Moving Average](C:\Users\PC_4232\Desktop\can\video-compensation\examples\output_homography\gifs\ORB_hm_drone2.gif)
+### ORB + Moving Average
+![ORB + Moving Average](examples\output_homography\gifs\ORB_hm_drone2.gif)
 
 ## Contributing
 
